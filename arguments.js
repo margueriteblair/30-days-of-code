@@ -11,7 +11,7 @@ function addTogether() {
       if (a === undefined || b === undefined) {
         return undefined;
       } else {
-        return a + b;
+        console.log(a + b);
       }
     } else {
       let c = arguments[0];
@@ -20,7 +20,7 @@ function addTogether() {
           if (c === undefined || checkNum(arg2) === undefined) {
             return undefined;
           } else {
-            return c + arg2;
+            console.log(c + arg2) ;
           }
         };
       }
