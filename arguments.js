@@ -1,13 +1,13 @@
 function addTogether() {
-    let checkNum = function(num) {
+    let checkNumbers = function(num) {
       if (typeof(num) !== "number") {
         return undefined;
       } else return num;
     };
   
     if (arguments.length > 1) {
-      let a = checkNum(arguments[0]);
-      let b = checkNum(arguments[1]);
+      let a = checkNumbers(arguments[0]);
+      let b = checkNumbers(arguments[1]);
       if (a === undefined || b === undefined) {
         return undefined;
       } else {
@@ -15,9 +15,9 @@ function addTogether() {
       }
     } else {
       let c = arguments[0];
-      if (checkNum(c)) {
+      if (checkNumbers(c)) {
         return function(arg2) {
-          if (c === undefined || checkNum(arg2) === undefined) {
+          if (c === undefined || checkNumbers(arg2) === undefined) {
             return undefined;
           } else {
             console.log(c + arg2) ;
