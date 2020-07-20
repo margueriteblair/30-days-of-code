@@ -7,4 +7,5 @@ for (let i = 0; i < 4; i++) {
         largestArray.push(largest);
     }
 }
-console.log(Math.max(...largestArray));
+console.log(Array(6));
+return (Math.max(...largestArray));
